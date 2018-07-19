@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exo01 
+public class exo1 
 {
 	public static void main(String[] args)
 	{

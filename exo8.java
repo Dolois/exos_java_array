@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class exo6 
+public class exo8 
 {
 	/*
-	 * Ecrire un programme qui saisit 6 entiers et les stocke dans un tableau,
-	 * puis rechercher et afficher le plus grand élément du tableau 
+	 * Ecrire un programme qui saisit un tableau de 6 entiers puis calcule la moyenne de
+	 * ces six entiers. Attention, la moyenne des entiers n'est pas un entier.
 	 */
 	
-	public static void rechercherAfficher(int[] tab)
-	{
+	public static void calcMoyenne(int[] tab)
+	{	
 		// affichage des 6 éléments du tableau
 		for (int i = 0; i < tab.length; i++)
 		{
@@ -16,17 +16,14 @@ public class exo6
 		}
 		System.out.println();
 		
-		// rechercher l'entier le plus grand du tableau
-		int entierTemp = -999999999;
+		double somme = 0;
 		for (int i = 0; i < tab.length; i++)
 		{
-			if (tab[i] > entierTemp)
-			{
-				entierTemp = tab[i];
-			}
+			somme = somme + tab[i];
 		}
-		// afficher l'entier le grand du tablea
-		System.out.println("L'entier le plus grand du tableau est : " + entierTemp);
+		double moyenne = 0;
+		moyenne = (somme / tab.length);
+		System.out.println(somme + " / " + tab.length + " = " + moyenne);
 	}
 	
 	public static void main(String[] args) 
@@ -45,6 +42,6 @@ public class exo6
 			System.out.println("Saisir entier n° " + j + " : ");
 			tab[i] = sc.nextInt();
 		}
-		rechercherAfficher(tab);
+		calcMoyenne(tab);		
 	}
 }
