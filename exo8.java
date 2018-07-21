@@ -9,7 +9,7 @@ public class exo8
 	
 	public static void calcMoyenne(int[] tab)
 	{	
-		// affichage des 6 éléments du tableau
+		// afficher tous les éléments du tableau
 		for (int i = 0; i < tab.length; i++)
 		{
 			System.out.print("tab[" + i + "]" + " = " + tab[i] + ", ");
@@ -19,10 +19,14 @@ public class exo8
 		double somme = 0;
 		for (int i = 0; i < tab.length; i++)
 		{
+			// calculer la somme de tous les éléments du tableau
 			somme = somme + tab[i];
 		}
+		// calculer la moyenne de tous les éléments du tableau
 		double moyenne = 0;
 		moyenne = (somme / tab.length);
+		
+		// afficher la moyenne calculée
 		System.out.println(somme + " / " + tab.length + " = " + moyenne);
 	}
 	
@@ -38,10 +42,14 @@ public class exo8
 		int j = 0;
 		for (int i = 0; i < tab.length; i++)
 		{
+			// saisir les 6 entiers
 			j++;
 			System.out.println("Saisir entier n° " + j + " : ");
+			// stocker les éléments dans le tableau
 			tab[i] = sc.nextInt();
 		}
+		
+		// appeler la méthode calcMoyenne
 		calcMoyenne(tab);		
 	}
 }
