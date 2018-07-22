@@ -7,6 +7,16 @@ public class exo9 {
 	 * et les placer dans un tableau.
 	 */
 	
+	/* 
+	 * byte b     = sc.nextByte();
+	 * short  sht = sc.nextShor();
+	 * int i      = sc.nextInt();
+	 * long l     = sc.nextLong();
+	 * string str = sc.nextLine();
+	 * float f    = sc.nextFloat();
+	 * double d   = sc.nextDouble();
+	 */
+	
 	public static void afficherTableau(String[] tab)
 	{
 		for (int i = 0; i < tab.length; i++)
@@ -18,25 +28,16 @@ public class exo9 {
 	public static void main(String[] args) 
 	{
 		// déclarer un tableau de String avec la taille
-		String[] tab = new String[6];
+		String[] tab = new String[8];
 		
 		// déclarer un scanner et créer une instance de classe Scanner
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Veuillez saisir un nombre :");
 		// stocker un nombre dans une variable de type double
-		
-		// int i = sc.nextInt();
-		// byte b  = sc.nextByte();
-		// string str = sc.nextLine();
-		// short  sht = sc.nextShor();
-		// float f = sc.nextFloat();
-		// double d= sc.nextDouble();
-		// long l  = sc.nextLong();
-		
 		double d = sc.nextDouble();
 		
-		// conversion d'un entier en string
+		// conversion d'un double en string
 		tab[0] = Double.toString(d);
 		
 		// déclarer un scanner et créer une instance de classe Scanner
