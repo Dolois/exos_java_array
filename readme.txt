@@ -2,7 +2,7 @@ Dans cet exercice, on va travailler avec un tableau d'entiers initialisé :
 
 int{] tab = {12, 15, 13, 10, 8, 9, 13, 14};
 
-Exercice 1.1
+Exercice 1.1 = exo1
 
 Ecrire un programme qui saisit un entier au clavier et qui recherche si cet entier
 appartient au tableau (reponse de type oui/non).
@@ -10,17 +10,17 @@ appartient au tableau (reponse de type oui/non).
 Note : ilserait possible d'arreter la recherche des qu'on a trouvé le nombre avec
 une instruction break pour sortir de la boucle for.
 
-Exercice 1.2
+Exercice 1.2 = exo2
 
 Ecrire un programme qui saisit un entier au clavier et qui recherche si cet entier 
 appartient au tableau. Au cas ou la reponse est positive, l'indice de cet entier dans
 le tableau est affiche.
 
-Exercice 1.3
+Exercice 1.3 = exo3
 
 Meme question, mais s'il y a plusieurs occurrences, le pemier indice est affiche.
 
-Exercice 1.4
+Exercice 1.4 = exo4
 
 Ecrire un programme qui saisit deux indices et echange les valeurs contenues dans
 le tableau a ces deux indices. Le programme affichera le contenu du tableau avant
@@ -63,3 +63,15 @@ Pour cette question, on ne concidère que les lettres sans accent.
 Pour déterminer si un caractère est une lettre, on utilise l'ordre sur les caractères. 
 Est une lettre tout caractère compris entre 'a' et 'z' et entre 'A' et 'Z'.
 Est une majuscule tout caractère compris entre 'A' et 'Z'.
+
+Exercice 3.2
+
+Ecrire un programme qui saisit 10 caractères au clavier, puis ensuite,
+calcule le nombre de majuscules et le nombre de lettres dans ce tableau.
+Un caractère n'est pas forcément une lettre : ce peut être un chiffre,
+un signe de ponctuation, un caractère spécial.
+ 
+Question 2 :
+les deux méthodes suivantes sont imposées :
+Character.isLetter    qui prend en paramêtre un caractère et renvoie un boolean.
+Character.isUppercase qui prend en paramêtre un caractère et renvoie un boolean.

@@ -1,23 +1,21 @@
 import java.util.Scanner;
 
-public class Exo31 {
+public class Exo32 {
 
 	/* Ecrire un programme qui saisit 10 caractères au clavier, puis ensuite,
 	 * calcule le nombre de majuscules et le nombre de lettres dans ce tableau.
 	 * Un caractère n'est pas forcément une lettre : ce peut être un chiffre,
 	 * un signe de ponctuation, un caractère spécial.
 	 * 
-	 * Question n° 1 :
-	 * Pour cette question, on ne concidère que les lettres sans accent.
-	 * Pour déterminer si un caractère est une lettre, on utilise l'ordre
-	 * sur les caractères. Est une lettre tout caractère compris entre
-	 * 'a' et 'z' et entre 'A' et 'Z'. Est une majuscule tout caractère
-	 * compris entre 'A' et 'Z'.
+	 * Question 2
+	 * les deux méthodes suivantes sont imposées :
+	 * Character.isLetter    qui prend en paramêtre un caractère et renvoie un boolean.
+	 * Character.isUppercase qui prend en paramêtre un caractère et renvoie un boolean.
 	 */
 	
 	public static void main(String[] args)
 	{
-		
+
 		// déclarer un scanner et créer une instance de la classs Scanner
 		Scanner sc = new Scanner(System.in);
 		
@@ -35,12 +33,11 @@ public class Exo31 {
 			tab[i] = sc.nextLine().charAt(0);
 			j++;
 			
-			if ((tab[i] >= 'a' && tab[i] <= 'z') ||
-			    (tab[i] >= 'A' && tab[i] <= 'Z'))
+			if ((Character.isLetter(tab[i])))
 			{
 				lettres++;
-				
-				if (tab[i] >= 'A' && tab[i] <= 'Z')
+					
+				if ((Character.isUpperCase(tab[i])))
 				{
 					majuscules++;
 				}
@@ -57,5 +54,4 @@ public class Exo31 {
 		System.out.println("Nombre de lettres    : " + lettres);
 		System.out.println("Nombre de majuscules : " + majuscules);
 	}
-
 }
