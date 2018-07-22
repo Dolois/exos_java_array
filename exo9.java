@@ -23,12 +23,21 @@ public class exo9 {
 		// déclarer un scanner et créer une instance de classe Scanner
 		Scanner sc = new Scanner(System.in);
 		
-		int entier;
-		System.out.println("Veuillez saisir un entier :");
-		// stocker un entier dans une variable de type int
-		entier = sc.nextInt();
+		System.out.println("Veuillez saisir un nombre :");
+		// stocker un nombre dans une variable de type double
+		
+		// int i = sc.nextInt();
+		// byte b  = sc.nextByte();
+		// string str = sc.nextLine();
+		// short  sht = sc.nextShor();
+		// float f = sc.nextFloat();
+		// double d= sc.nextDouble();
+		// long l  = sc.nextLong();
+		
+		double d = sc.nextDouble();
+		
 		// conversion d'un entier en string
-		tab[0] = Integer.toString(entier);
+		tab[0] = Double.toString(d);
 		
 		// déclarer un scanner et créer une instance de classe Scanner
 		Scanner sc1 = new Scanner(System.in);
