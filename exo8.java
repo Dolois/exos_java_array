@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class exo8 
 {
+	private static Scanner sc;
+
 	/*
 	 * Ecrire un programme qui saisit un tableau de 6 entiers puis calcule la moyenne de
 	 * ces six entiers. Attention, la moyenne des entiers n'est pas un entier.
@@ -35,8 +37,7 @@ public class exo8
 		// déclarer un tableau d'entiers avec une taille de 6 éléments
 		int[] tab = new int[6];
 		
-		// déclarer un scanner et créer une instance de classe Scanner
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		
 		// saisir 6 entiers et les stocker dans un tableau
 		int j = 0;
@@ -48,6 +49,7 @@ public class exo8
 			// stocker les éléments dans le tableau
 			tab[i] = sc.nextInt();
 		}
+		sc.close();
 		
 		// appeler la méthode calcMoyenne
 		calcMoyenne(tab);		
