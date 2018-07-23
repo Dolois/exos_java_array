@@ -17,22 +17,23 @@ public class exo2
 
 		int entier;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Veuillez saisir un entier :");
+		System.out.print("Veuillez saisir un entier : ");
 		entier = sc.nextInt();
 		
-		int j = -1;
+		int indice = 0;
 		boolean trouve = false;
 		for (int i = 0; i < tab.length; i++)
 		{
 			if (tab[i] == entier)
 			{
-				j = i;
+				indice = i;
 				trouve = true;
 			}
 		}
 		if (trouve)
 		{
-			System.out.println("L'indice trouvé est : " + j);
+			System.out.println();
+			System.out.println("L'indice trouvé est : " + indice);
 		}
 	}
 

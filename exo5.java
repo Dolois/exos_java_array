@@ -14,7 +14,7 @@ public class exo5
 		// déclaration d'un tableau d'entier avec une taille de 6 éléments
 		int[] tab = new int[a];
 		
-		// déclaration d'un Scanner et création d'une instance Scanner
+		// déclaration d'un Scanner et création d'une instance de la classe Scanner
 		Scanner sc = new Scanner(System.in);
 		
 		int j = 0;

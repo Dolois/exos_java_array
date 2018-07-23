@@ -8,6 +8,7 @@ public class exo9 {
 	 */
 	
 	/* 
+	 * char = sc.nextLine().charAt(0);
 	 * byte b     = sc.nextByte();
 	 * short  sht = sc.nextShor();
 	 * int i      = sc.nextInt();
