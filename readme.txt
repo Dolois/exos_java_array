@@ -75,3 +75,19 @@ Question 2 :
 les deux méthodes suivantes sont imposées :
 Character.isLetter    qui prend en paramêtre un caractère et renvoie un boolean.
 Character.isUppercase qui prend en paramêtre un caractère et renvoie un boolean.
+
+Exercice 4.1a
+
+Ecrire un programme qui saisit un nombre au clavier
+et qui calcule un tableau dont le plus grand indice
+est n et dans lequel il y a, pour chaque case d'indice i,
+la somme des entiers compris entre 0 et i.
+
+Exercice 4.1b
+
+Exercice 4.2
+
+Ecrire un programme qui saisit au clavier 4 valeurs 
+booléennes (true ou false en Java) et qui affiche 
+ensuite le résultat de l'opération && sur toutes ces valeurs ainsi 
+que le résultat de l'opération || sur toutes ces valeur.
